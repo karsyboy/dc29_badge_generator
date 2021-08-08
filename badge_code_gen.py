@@ -1,5 +1,5 @@
 # PySerial is required to run this script make sure to install it with python3 and as sudo
-import serial,io,random,bisect
+import serial,io
 
 ser = serial.Serial('/dev/ttyACM0', 9600, timeout=1) # Make sure the serial device is set to the proper port
 sio = io.TextIOWrapper(io.BufferedRWPair(ser, ser))
