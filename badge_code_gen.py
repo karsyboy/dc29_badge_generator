@@ -3,8 +3,8 @@ import serial,io,random,bisect
 
 ser = serial.Serial('/dev/ttyACM0', 9600, timeout=1) # Make sure the serial device is set to the proper port
 sio = io.TextIOWrapper(io.BufferedRWPair(ser, ser))
-badge_str_1 = "362F" # First for characters of a badge response for your badge
-badge_str_2 = "505800CE40911357017C7FBC" # Characters 9 through 32 from the same badge response used for badge_str_1
+badge_str_1 = "CHANGE-ME" # First for characters of a badge response for your badge
+badge_str_2 = "CHANGE-ME" # Characters 9 through 32 from the same badge response used for badge_str_1
 
 # Generates a list of all hex combinations to test with
 def gen_all_hex():
